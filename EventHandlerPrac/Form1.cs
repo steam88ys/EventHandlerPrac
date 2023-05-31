@@ -34,9 +34,14 @@ namespace EventHandlerPrac
             MessageBox.Show(btn.Text + " 버튼이 클릭되었습니다.");
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /*private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             MessageBox.Show(e.CloseReason.ToString());
-        }
+        }*/
     }
 }
