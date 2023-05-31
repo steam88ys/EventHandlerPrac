@@ -36,6 +36,7 @@ namespace EventHandlerPrac
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -83,8 +84,13 @@ namespace EventHandlerPrac
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(145, 107);
             this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
+            this.button3.Text = "타이머 켜기";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
             // 
             // Form1
             // 
@@ -111,6 +117,7 @@ namespace EventHandlerPrac
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
